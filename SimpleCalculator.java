@@ -3,30 +3,39 @@ public class SimpleCalculator{
 	public static Scanner s = new Scanner(System.in);
 	
 	public static void main(String [] xxx){
-		System.out.println("Input your function \n a) +   b) -   c) /   d) x");
-		String function = s.nextLine();
-		
-		System.out.println("Input two Integers");
-		int x = s.nextInt();
-		int y = s.nextInt();
-		
-		switch(function){
-			case "a":
-				add(x,y);
-			break;
-			case "b":
-				sub(x,y);
-			break;
-			case "c":
-				div(x,y);
-			break;
-			case "d":
-				mul(x,y);
-			break;
-			default:
+		while (true){
+			System.out.println("------------------------------------------------------ \n Input your function \n a) +   b) -   c) /   d) x");
+			String function = s.nextLine();
 			
-			break;
-		}
+			System.out.println("------------------------------------------------------ \n Input two Integers");
+			int x = s.nextInt();
+			int y = s.nextInt();
+			
+			switch(function){
+				case "a":
+					add(x,y);
+				break;
+				case "b":
+					sub(x,y);
+				break;
+				case "c":
+					div(x,y);
+				break;
+				case "d":
+					mul(x,y);
+				break;
+				default:
+				
+				break;
+			}//end switch case
+			System.out.println("------------------------------------------------------ \n\n\n Do you want to exit? Y/N");
+			String g = s.nextLine();
+			g = s.nextLine();
+			if (g.equals("Y") || g.equals("y")){
+				break;
+			}
+			
+		}// end while statement
 	}//end main
 	public static void add (int x, int y){
 		double output = x + y;
