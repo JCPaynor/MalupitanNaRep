@@ -7,6 +7,8 @@ public class SimpleCalculator{
 		String function = s.nextLine();
 		
 		System.out.println("Input two Integers");
+		int x = s.nextInt();
+		int y = s.nextInt();
 		
 	}//end main
 	public static double add (int x, int y){
