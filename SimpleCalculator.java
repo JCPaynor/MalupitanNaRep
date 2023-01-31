@@ -6,6 +6,8 @@ public class SimpleCalculator{
 		System.out.println("Input your function \n a) +   b) -   c) /   d) x");
 		String function = s.nextLine();
 		
+		System.out.println("Input two Integers");
+		
 	}//end main
 	public static double add (int x, int y){
 		double output = x + y;
