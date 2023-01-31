@@ -1,4 +1,7 @@
+import java.util.Scanner;
 public class SimpleCalculator{
+	public Scanner s = new Scanner(System.in);
+	
 	public static void main(String [] xxx){
 		
 	}//end main
