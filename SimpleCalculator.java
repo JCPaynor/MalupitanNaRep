@@ -10,21 +10,34 @@ public class SimpleCalculator{
 		int x = s.nextInt();
 		int y = s.nextInt();
 		
+		switch(function){
+			case "a":
+				add(x,y);
+			break;
+			case "b":
+				sub(x,y);
+			break;
+			case "c":
+				div(x,y);
+			break;
+			case "d":
+				mul(x,y);
+			break;
+			default:
+			
+			break;
+		}
 	}//end main
-	public static double add (int x, int y){
+	public static void add (int x, int y){
 		double output = x + y;
-		return output;
 	}// end add
-	public static double div (int x, int y){
+	public static void div (int x, int y){
 		double output = x / y;
-		return output;
 	}// end div
-	public static double mul (int x, int y){
+	public static void mul (int x, int y){
 		double output = x * y;
-		return output;
 	}// end mul
-	public static double sub (int x, int y){
+	public static void sub (int x, int y){
 		double output = x - y;
-		return output;
 	}// end sub
 }//end SimpleCalculator
